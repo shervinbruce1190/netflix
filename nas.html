@@ -1,0 +1,1498 @@
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js">
+        </script>
+         <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet">
+     <style>
+body {
+    margin: 2px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(10, 40, 0, 0.7);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+select#select_page,
+#country {
+    width: 70%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: black; 
+}
+
+
+select#select_page option,
+#country option {
+    color: black; 
+}
+
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.bottom {
+    background-color: blue;
+    color: white;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px; 
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.bottom:hover {
+    background-color: darkblue; 
+}
+
+</style>
+
+
+
+    </head>
+    
+    <body>
+    <center>  <div class="container" id="container">
+        <select id="select_page" style="width:350px;height:300px;top:60px"; class="operator">
+            <option value="MA Philosophy of Physics">
+                MA Philosophy of Physics
+            </option>
+            <option value="MSc Biomedical Sciences Research">
+                MSc Biomedical Sciences Research
+            </option>
+            <option value="Masters Programme in Electrical Engineering">
+                Masters Programme in Electrical Engineering
+            </option>
+            <option value="MSc Degree in Global Business Management">
+                MSc Degree in Global Business Management
+            </option>
+            <option value="MSc by research Aerospace Engineering">
+                MSc by research Aerospace Engineering
+            </option>
+            <option value="Diploma in Early Childhood Education - AEC">
+                Diploma in Early Childhood Education - AEC
+            </option>
+            <option value="Post-Baccalaureate Certificate in Data Analysis">
+                Post-Baccalaureate Certificate in Data Analysis
+            </option>
+            <option value="Master Program in Business Studies with an International Focus">
+                Master Program in Business Studies with an International Focus
+            </option>
+            <option value="MSc International Relations">
+                MSc International Relations
+            </option>
+            <option value="Diploma Culinary Arts">
+                Diploma Culinary Arts
+            </option>
+            <option value="Master of Medical Science with Medical Research">
+                Master of Medical Science with Medical Research
+            </option>
+            <option value="Diploma in International Hotel and Tourism Management">
+                Diploma in International Hotel and Tourism Management
+            </option>
+            <option value="Diploma in Hotel Management Technique - DEC">
+                Diploma in Hotel Management Technique - DEC
+            </option>
+            <option value="Master of Medical Science with Global Health">
+                Master of Medical Science with Global Health
+            </option>
+            <option value="Masters in Infection Biology">
+                Masters in Infection Biology
+            </option>
+            <option value="Mres Creative Practice">
+                Mres Creative Practice
+            </option>
+            <option value="MSc Environmental Policy">
+                MSc Environmental Policy
+            </option>
+            <option value="Bachelors in  Arts-French">
+                Bachelors in Arts-French
+            </option>
+            <option value="Bachelor in International Management">
+                Bachelor in International Management
+            </option>
+            <option value="MSc Banking and Finance">
+                MSc Banking and Finance
+            </option>
+            <option value="Diploma in Social Sciences - Individual & Society - DEC">
+                Diploma in Social Sciences - Individual & Society - DEC
+            </option>
+            <option value="B.A. International Management">
+                B.A. International Management
+            </option>
+            <option value="Diploma in Information Technology Programmer-Analyst - AEC (Technologies)">
+                Diploma in Information Technology Programmer-Analyst - AEC (Technologies)
+            </option>
+            <option value="Master of Science with Sustainable Development">
+                Master of Science with Sustainable Development
+            </option>
+            <option value="Masters of Business Administration (MBA)">
+                Masters of Business Administration (MBA)
+            </option>
+            <option value="Masters Programme in Embedded and Intelligent Systems">
+                Masters Programme in Embedded and Intelligent Systems
+            </option>
+            <option value="Bachelors in  Arts-English">
+                Bachelors in Arts-English
+            </option>
+            <option value="MSc Accounting">
+                MSc Accounting
+            </option>
+            <option value="Master of Science with Computational Science">
+                Master of Science with Computational Science
+            </option>
+            <option value="Master of Arts with Sociology of Education">
+                Master of Arts with Sociology of Education
+            </option>
+            <option value="Master's Programme in Biorefineries">
+                Master's Programme in Biorefineries
+            </option>
+            <option value="Bachelor of Arts Degree in Child and Youth Care">
+                Bachelor of Arts Degree in Child and Youth Care
+            </option>
+            <option value="Masters Programme in Supply Management">
+                Masters Programme in Supply Management
+            </option>
+            <option value="Diploma in Business Management - DEC (Business & Technologies)">
+                Diploma in Business Management - DEC (Business & Technologies)
+            </option>
+            <option value="MSc Accounting & Finance">
+                MSc Accounting & Finance
+            </option>
+            <option value="MSc Banking (Chartered Banker)">
+                MSc Banking (Chartered Banker)
+            </option>
+            <option value="Masters Programme in Electronics Design">
+                Masters Programme in Electronics Design
+            </option>
+            <option value="Diploma in Professional Cooking - DEP">
+                Diploma in Professional Cooking - DEP
+            </option>
+            <option value="Master of Arts with Holocaust and Genocide Studies">
+                Master of Arts with Holocaust and Genocide Studies
+            </option>
+            <option value="Masters Programme in Global Management of Innovation and Technology (GMIT)">
+                Masters Programme in Global Management of Innovation and Technology (GMIT)
+            </option>
+            <option value="Diploma in Network Management (CISCO & MICROSOFT) - AEC (Technologies)">
+                Diploma in Network Management (CISCO & MICROSOFT) - AEC (Technologies)
+            </option>
+            <option value="MSc Computer Science(Conversion)">
+                MSc Computer Science(Conversion)
+            </option>
+            <option value="Bachelors in Social Justice and Peace Studies">
+                Bachelors in Social Justice and Peace Studies
+            </option>
+            <option value="Post Graduate Diploma in International Hotel and Events Management">
+                Post Graduate Diploma in International Hotel and Events Management
+            </option>
+            <option value="Master of Arts with Early Modern History">
+                Master of Arts with Early Modern History
+            </option>
+            <option value="MSc Global Wildlife Health and Conservation">
+                MSc Global Wildlife Health and Conservation
+            </option>
+            <option value="Diploma in Graphic and Digital Design">
+                Diploma in Graphic and Digital Design
+            </option>
+            <option value="Bachelors in Management and Organizational Studies - Global Commerce">
+                Bachelors in Management and Organizational Studies - Global Commerce
+            </option>
+            <option value="Masters Program in Tourism Destination Development">
+                Masters Program in Tourism Destination Development
+            </option>
+            <option value="Master of Science with Applied Biotechnology">
+                Master of Science with Applied Biotechnology
+            </option>
+            <option value="Diploma in Early Childhood Education - DEC">
+                Diploma in Early Childhood Education - DEC
+            </option>
+            <option value="M.Sc. Degree in International Hospitality Business Management">
+                M.Sc. Degree in International Hospitality Business Management
+            </option>
+            <option value="MSc East Asian Development and the Global economy">
+                MSc East Asian Development and the Global economy
+            </option>
+            <option value="Diploma in International Commerce, Import-Export (FITT) - AEC (Business)">
+                Diploma in International Commerce, Import-Export (FITT) - AEC (Business)
+            </option>
+            <option value="Bachelors in Management and Organizational Studies - Accounting">
+                Bachelors in Management and Organizational Studies - Accounting
+            </option>
+            <option value="Bachelor of  Arts in International Relations">
+                Bachelor of Arts in International Relations
+            </option>
+            <option value="BSc Marketing">
+                BSc Marketing
+            </option>
+            <option value="Post Graduate Diploma in International Hotel and Tourism Management">
+                Post Graduate Diploma in International Hotel and Tourism Management
+            </option>
+            <option value="Bachelors in  Social Science-Sociology">
+                Bachelors in Social Science-Sociology
+            </option>
+            <option value="Bachelors in Management and Organizational Studies - Finance and Administration">
+                Bachelors in Management and Organizational Studies - Finance and Administration
+            </option>
+            <option value="Master of International Trade & Finance">
+                Master of International Trade & Finance
+            </option>
+            <option value="Bachelors of Commerce">
+                Bachelors of Commerce
+            </option>
+            <option value="Masters Program in Economics">
+                Masters Program in Economics
+            </option>
+            <option value="Higher Diploma in Culinary Arts">
+                Higher Diploma in Culinary Arts
+            </option>
+            <option value="MBA - Leisure & Tourism Management">
+                MBA - Leisure & Tourism Management
+            </option>
+            <option value="Master's Programme in Energy Conversion">
+                Master's Programme in Energy Conversion
+            </option>
+            <option value="Master of Social Science with Entrepreneurship">
+                Master of Social Science with Entrepreneurship
+            </option>
+            <option value="Postgraduate Diploma in International Hotel and Design Management">
+                Postgraduate Diploma in International Hotel and Design Management
+            </option>
+            <option value="Masters in Bioinformatics">
+                Masters in Bioinformatics
+            </option>
+            <option value="Masters Programme in Sustainability Science and Solutions">
+                Masters Programme in Sustainability Science and Solutions
+            </option>
+            <option value="Bachelors in Childhood and Social Institutions">
+                Bachelors in Childhood and Social Institutions
+            </option>
+            <option value="Master's Programme in Software Engineering and Digital Transformation">
+                Master's Programme in Software Engineering and Digital Transformation
+            </option>
+            <option value="Bachelor of Business Administration (BBA)">
+                Bachelor of Business Administration (BBA)
+            </option>
+            <option value="MSc Accounting and Finance">
+                MSc Accounting and Finance
+            </option>
+            <option value="Bachelors in Management and Organizational Studies">
+                Bachelors in Management and Organizational Studies
+            </option>
+            <option value="Master of Science with Embedded Systems">
+                Master of Science with Embedded Systems
+            </option>
+            <option value="DEC in Computer Science Technology - Network and Security Management">
+                DEC in Computer Science Technology - Network and Security Management
+            </option>
+            <option value="MSc Wireless Communications and Signal Processing">
+                MSc Wireless Communications and Signal Processing
+            </option>
+            <option value="Bachelor of Arts">
+                Bachelor of Arts
+            </option>
+            <option value="Postgraduate Diploma Hospitality Management">
+                Postgraduate Diploma Hospitality Management
+            </option>
+            <option value="Bachelor of Business Administration in Hospitality Management">
+                Bachelor of Business Administration in Hospitality Management
+            </option>
+            <option value="Bachelors in Management and Organizational Studies - Organizational & Human Resources">
+                Bachelors in Management and Organizational Studies - Organizational &
+                Human Resources
+            </option>
+            <option value="BA - Bachelor of Arts in Sports Management">
+                BA - Bachelor of Arts in Sports Management
+            </option>
+            <option value="Master of Medical Science with Infection Biology">
+                Master of Medical Science with Infection Biology
+            </option>
+            <option value="Master of Arts in Entrepreneurship for the Global Hospitality and Tourism Industry">
+                Master of Arts in Entrepreneurship for the Global Hospitality and Tourism
+                Industry
+            </option>
+            <option value="Diploma in Event Planning - AEC">
+                Diploma in Event Planning - AEC
+            </option>
+            <option value="MSc Development and Security">
+                MSc Development and Security
+            </option>
+            <option value="Masters Programme in Mechanical Engineering">
+                Masters Programme in Mechanical Engineering
+            </option>
+            <option value="Engineering Physics Diploma in Mechatronics">
+                Engineering Physics Diploma in Mechatronics
+            </option>
+            <option value="Bachelor of Business Administration (Aviation) Degree">
+                Bachelor of Business Administration (Aviation) Degree
+            </option>
+            <option value="Bachelor of Science in Computer Science">
+                Bachelor of Science in Computer Science
+            </option>
+            <option value="Bachelor of Computer Information Systems Degree">
+                Bachelor of Computer Information Systems Degree
+            </option>
+            <option value="MBA in Sports Management">
+                MBA in Sports Management
+            </option>
+            <option value="Master's Programme in International Business and Entrepreneurship (MIBE)">
+                Master's Programme in International Business and Entrepreneurship (MIBE)
+            </option>
+            <option value="MBA - International Business">
+                MBA - International Business
+            </option>
+            <option value="Bachelor of International Business in Hotel and Tourism Management">
+                Bachelor of International Business in Hotel and Tourism Management
+            </option>
+            <option value="Bachelors in  Arts-Religious Studies">
+                Bachelors in Arts-Religious Studies
+            </option>
+            <option value="Bachelors in  Social Science-Political Science">
+                Bachelors in Social Science-Political Science
+            </option>
+            <option value="Bachelor in Communication and Digital Media">
+                Bachelor in Communication and Digital Media
+            </option>
+            <option value="MSc Nanotechnology and Microfabrication">
+                MSc Nanotechnology and Microfabrication
+            </option>
+            <option value="Bachelors in  Arts-Philosophy">
+                Bachelors in Arts-Philosophy
+            </option>
+            <option value="Bachelors in  Social Science-Criminology">
+                Bachelors in Social Science-Criminology
+            </option>
+            <option value="Diploma in Accounting & Management Technology - AEC (Business)">
+                Diploma in Accounting & Management Technology - AEC (Business)
+            </option>
+            <option value="Diploma in Social Sciences - Civilization & Citizenship - DEC">
+                Diploma in Social Sciences - Civilization & Citizenship - DEC
+            </option>
+            <option value="MSc Accounting and Banking">
+                MSc Accounting and Banking
+            </option>
+            <option value="Diploma in Computer Information System">
+                Diploma in Computer Information System
+            </option>
+            <option value="Bachelor of Arts in International Hospitality and Design Management">
+                Bachelor of Arts in International Hospitality and Design Management
+            </option>
+            <option value="Bachelors in  Social Science-History">
+                Bachelors in Social Science-History
+            </option>
+            <option value="Master of Medical Science with Biomedicine">
+                Master of Medical Science with Biomedicine
+            </option>
+            <option value="Diploma in Business Management - AEC (Business)">
+                Diploma in Business Management - AEC (Business)
+            </option>
+            <option value="BA - Bachelor of Arts in Leisure & Tourism Management">
+                BA - Bachelor of Arts in Leisure & Tourism Management
+            </option>
+            <option value="BA Degree Global Business Management">
+                BA Degree Global Business Management
+            </option>
+            <option value="Master of Science with Wind Power Project Management - 1 Year">
+                Master of Science with Wind Power Project Management - 1 Year
+            </option>
+            <option value="Master's Programme in Bioenergy Systems">
+                Master's Programme in Bioenergy Systems
+            </option>
+            <option value="Diploma in Social Services">
+                Diploma in Social Services
+            </option>
+            <option value="Diploma in Media Strategies & Advertising - AEC">
+                Diploma in Media Strategies & Advertising - AEC
+            </option>
+            <option value="Master of Science in International Hospitality Management">
+                Master of Science in International Hospitality Management
+            </option>
+            <option value="Master of Medical Science with Molecular Medicine">
+                Master of Medical Science with Molecular Medicine
+            </option>
+            <option value="MSc Advanced Microelectronic Systems Engineering.">
+                MSc Advanced Microelectronic Systems Engineering.
+            </option>
+            <option value="Master of Laws in Investment Treaty Arbitration">
+                Master of Laws in Investment Treaty Arbitration
+            </option>
+            <option value="Diploma in Accounting & Management Technology - DEC (Business & Technologies)">
+                Diploma in Accounting & Management Technology - DEC (Business & Technologies)
+            </option>
+            <option value="MBA - International Marketing">
+                MBA - International Marketing
+            </option>
+            <option value="Postgraduate Diploma in Culinary Arts">
+                Postgraduate Diploma in Culinary Arts
+            </option>
+            <option value="MBA - Global Banking & Finance">
+                MBA - Global Banking & Finance
+            </option>
+            <option value="Bachelors in  Social Science-Finance">
+                Bachelors in Social Science-Finance
+            </option>
+            <option value="Bachelor of Business Administration Degree (BBA)">
+                Bachelor of Business Administration Degree (BBA)
+            </option>
+            <option value="Master of International Relations and Diplomacy">
+                Master of International Relations and Diplomacy
+            </option>
+            <option value="Master Programme in Energy Efficient Built Environment">
+                Master Programme in Energy Efficient Built Environment
+            </option>
+            <option value="Diploma in Theatre Arts">
+                Diploma in Theatre Arts
+            </option>
+            <option value="Bachelors in  Arts-Catholic Studies">
+                Bachelors in Arts-Catholic Studies
+            </option>
+            <option value="MSc Optical Communications and Signal Processing">
+                MSc Optical Communications and Signal Processing
+            </option>
+            <option value="Bachelors in  Arts-Catholic Studies for Teachers">
+                Bachelors in Arts-Catholic Studies for Teachers
+            </option>
+            <option value="Master of Arts in Theology with International Humanitarian Action">
+                Master of Arts in Theology with International Humanitarian Action
+            </option>
+            <option value="BSc Zoology with Animal Behaviour">
+                BSc Zoology with Animal Behaviour
+            </option>
+            <option value="Bachelor of Arts Degree in Child and Youth Care - Child Protection Specialization">
+                Bachelor of Arts Degree in Child and Youth Care - Child Protection Specialization
+            </option>
+            <option value="BA - Bachelor of Arts in International Relations">
+                BA - Bachelor of Arts in International Relations
+            </option>
+            <option value="Masters in Cognitive Neuroscience: Mind and Brain">
+                Masters in Cognitive Neuroscience: Mind and Brain
+            </option>
+            <option value="MBA">
+                MBA
+            </option>
+            <option value="Master of Science with Industrial Management and Innovation">
+                Master of Science with Industrial Management and Innovation
+            </option>
+            <option value="Master of Social Science with Economics">
+                Master of Social Science with Economics
+            </option>
+            <option value="Diploma in Social Sciences - International Studies - DEC">
+                Diploma in Social Sciences - International Studies - DEC
+            </option>
+            <option value="Bachelor of Arts?in?Culinary Arts">
+                Bachelor of Arts?in?Culinary Arts
+            </option>
+            <option value="Diploma in Business Administration">
+                Diploma in Business Administration
+            </option>
+            <option value="Masters Programme in International Marketing Management">
+                Masters Programme in International Marketing Management
+            </option>
+            <option value="BA - Bachelor in Artificial Intelligence for Business">
+                BA - Bachelor in Artificial Intelligence for Business
+            </option>
+            <option value="MSc Medical Molecular Biology with Genetics">
+                MSc Medical Molecular Biology with Genetics
+            </option>
+            <option value="Masters in Digital Narration: Game and Cultural Heritage">
+                Masters in Digital Narration: Game and Cultural Heritage
+            </option>
+            <option value="MSc International Development">
+                MSc International Development
+            </option>
+            <option value="Master of Medical Science with Forensic Science">
+                Master of Medical Science with Forensic Science
+            </option>
+            <option value="Diploma in Arts Literature & Communication - Culture & Media option - DEC">
+                Diploma in Arts Literature & Communication - Culture & Media option -
+                DEC
+            </option>
+            <option value="Diploma in Food Service Management - DEC">
+                Diploma in Food Service Management - DEC
+            </option>
+            <option value="Masters Programme in Network Forensics">
+                Masters Programme in Network Forensics
+            </option>
+            <option value="Masters Programme in Information Technology">
+                Masters Programme in Information Technology
+            </option>
+            <option value="Diploma Manager in Training for Trainers in Hotel Management">
+                Diploma Manager in Training for Trainers in Hotel Management
+            </option>
+            <option value="MSc Advanced Composites">
+                MSc Advanced Composites
+            </option>
+            <option value="Master of Science in Marketing for Sustainable Business Management">
+                Master of Science in Marketing for Sustainable Business Management
+            </option>
+            <option value="Master of Science with Renewable Electricity Production">
+                Master of Science with Renewable Electricity Production
+            </option>
+            <option value="MSc Communication Networks and Signal Processing">
+                MSc Communication Networks and Signal Processing
+            </option>
+            <option value="Master of Medical Science with Medical Nuclide Techniques">
+                Master of Medical Science with Medical Nuclide Techniques
+            </option>
+            <option value="Diploma in Transportation Logistics - AEC (Business)">
+                Diploma in Transportation Logistics - AEC (Business)
+            </option>
+            <option value="Master of International Business in Hotel and Design Management (direct 2nd yr)">
+                Master of International Business in Hotel and Design Management (direct
+                2nd yr)
+            </option>
+            <option value="Higher Diploma in International Hotel and Tourism Management">
+                Higher Diploma in International Hotel and Tourism Management
+            </option>
+            <option value="Bachelors in  Social Science-Economics">
+                Bachelors in Social Science-Economics
+            </option>
+            <option value="Masters Program in Business Intelligence">
+                Masters Program in Business Intelligence
+            </option>
+            <option value="Bachelor of Arts in Culinary Arts">
+                Bachelor of Arts in Culinary Arts
+            </option>
+            <option value="MSc Broadband & Optical Communications">
+                MSc Broadband & Optical Communications
+            </option>
+            <option value="Masters Programme in Strategic Entrepreneurship for International Growth">
+                Masters Programme in Strategic Entrepreneurship for International Growth
+            </option>
+            <option value="Diploma in Arts Literature & Communication - Arts & Design option - DEC">
+                Diploma in Arts Literature & Communication - Arts & Design option - DEC
+            </option>
+            <option value="BA Degree Hotel & Hospitality Management">
+                BA Degree Hotel & Hospitality Management
+            </option>
+            <option value="Masters in Serious Games">
+                Masters in Serious Games
+            </option>
+            <option value="Diploma in Special Care Counselling - DEC">
+                Diploma in Special Care Counselling - DEC
+            </option>
+            <option value="Bachelor's Programme in Technology and Engineering Science">
+                Bachelor's Programme in Technology and Engineering Science
+            </option>
+            <option value="MSc Electronic Engineering">
+                MSc Electronic Engineering
+            </option>
+            <option value="Diploma in Operations & Production Management - AEC (Business)">
+                Diploma in Operations & Production Management - AEC (Business)
+            </option>
+            <option value="Bachelors in  Social Science-Psychology">
+                Bachelors in Social Science-Psychology
+            </option>
+            <option value="Diploma in Early Childhood Education">
+                Diploma in Early Childhood Education
+            </option>
+            <option value="Diploma in Visual Arts">
+                Diploma in Visual Arts
+            </option>
+        </select>
+        <h3>
+            Choose The Type Of Degree That You Wanna Pursue
+        </h3>
+        <input type="radio" name="gender" value="Twinning Programmes (PG)">
+        Twinning Programmes (PG)
+    </br>
+        <input type="radio" name="gender" value="PG Diploma /Certificate">
+        PG Diploma /Certificate
+        </br>
+        <input type="radio" name="gender" value="UG Diploma /Certificate /Associate Degree">
+        UG Diploma /Certificate /Associate Degree
+        </br>
+        <input type="radio" name="gender" value="PhD">
+        PhD
+        </br>
+        <input type="radio" name="gender" value="Postgraduate">
+        Postgraduate
+        </br>
+        <input type="radio" name="gender" value="Undergraduate">
+        Undergraduate
+        <input type="radio" name="gender" value="UG+PG (Accelerated) Degree">
+        UG+PG (Accelerated) Degree
+        </br>
+        <input type="radio" name="gender" value="Foundation / Pathway Program">
+        Foundation / Pathway Program
+        </br>
+        <input type="radio" name="gender" value="High School (11th-12th)">
+        High School (11th-12th)
+        </br>
+        <input type="radio" name="gender" value="English Language program (ESL,IEP,ELP)">
+        English Language program (ESL,IEP,ELP)
+        </br>
+        <input type="radio" name="gender" value="Foundation">
+        Foundation
+        </br>
+        <input type="radio" name="gender" value="Short Term Programs">
+        Short Term Programs
+        </br>
+        <input type="radio" name="gender" value="study_level">
+        study_level
+        </br>
+        <input type="radio" name="gender" value="Summer Programs">
+        Summer Programs
+    </br>
+     
+        <h3>enter the learning type</h3>
+        <input type="radio" name="gender1" value="Fulltime">
+        Full Time
+        <input type="radio" name="gender1" value="Online">
+        Online
+
+        <h3>
+            choose your nationality
+        </h3>
+      
+        <select class="form-select" id="country" name="country">
+                <option>
+                    select country
+                </option>
+                <option value="AF">
+                    Afghanistan
+                </option>
+                <option value="AX">
+                    Aland Islands
+                </option>
+                <option value="AL">
+                    Albania
+                </option>
+                <option value="DZ">
+                    Algeria
+                </option>
+                <option value="AS">
+                    American Samoa
+                </option>
+                <option value="AD">
+                    Andorra
+                </option>
+                <option value="AO">
+                    Angola
+                </option>
+                <option value="AI">
+                    Anguilla
+                </option>
+                <option value="AQ">
+                    Antarctica
+                </option>
+                <option value="AG">
+                    Antigua and Barbuda
+                </option>
+                <option value="AR">
+                    Argentina
+                </option>
+                <option value="AM">
+                    Armenia
+                </option>
+                <option value="AW">
+                    Aruba
+                </option>
+                <option value="AU">
+                    Australia
+                </option>
+                <option value="AT">
+                    Austria
+                </option>
+                <option value="AZ">
+                    Azerbaijan
+                </option>
+                <option value="BS">
+                    Bahamas
+                </option>
+                <option value="BH">
+                    Bahrain
+                </option>
+                <option value="BD">
+                    Bangladesh
+                </option>
+                <option value="BB">
+                    Barbados
+                </option>
+                <option value="BY">
+                    Belarus
+                </option>
+                <option value="BE">
+                    Belgium
+                </option>
+                <option value="BZ">
+                    Belize
+                </option>
+                <option value="BJ">
+                    Benin
+                </option>
+                <option value="BM">
+                    Bermuda
+                </option>
+                <option value="BT">
+                    Bhutan
+                </option>
+                <option value="BO">
+                    Bolivia
+                </option>
+                <option value="BQ">
+                    Bonaire, Sint Eustatius and Saba
+                </option>
+                <option value="BA">
+                    Bosnia and Herzegovina
+                </option>
+                <option value="BW">
+                    Botswana
+                </option>
+                <option value="BV">
+                    Bouvet Island
+                </option>
+                <option value="BR">
+                    Brazil
+                </option>
+                <option value="IO">
+                    British Indian Ocean Territory
+                </option>
+                <option value="BN">
+                    Brunei Darussalam
+                </option>
+                <option value="BG">
+                    Bulgaria
+                </option>
+                <option value="BF">
+                    Burkina Faso
+                </option>
+                <option value="BI">
+                    Burundi
+                </option>
+                <option value="KH">
+                    Cambodia
+                </option>
+                <option value="CM">
+                    Cameroon
+                </option>
+                <option value="CA">
+                    Canada
+                </option>
+                <option value="CV">
+                    Cape Verde
+                </option>
+                <option value="KY">
+                    Cayman Islands
+                </option>
+                <option value="CF">
+                    Central African Republic
+                </option>
+                <option value="TD">
+                    Chad
+                </option>
+                <option value="CL">
+                    Chile
+                </option>
+                <option value="CN">
+                    China
+                </option>
+                <option value="CX">
+                    Christmas Island
+                </option>
+                <option value="CC">
+                    Cocos (Keeling) Islands
+                </option>
+                <option value="CO">
+                    Colombia
+                </option>
+                <option value="KM">
+                    Comoros
+                </option>
+                <option value="CG">
+                    Congo
+                </option>
+                <option value="CD">
+                    Congo, Democratic Republic of the Congo
+                </option>
+                <option value="CK">
+                    Cook Islands
+                </option>
+                <option value="CR">
+                    Costa Rica
+                </option>
+                <option value="CI">
+                    Cote D'Ivoire
+                </option>
+                <option value="HR">
+                    Croatia
+                </option>
+                <option value="CU">
+                    Cuba
+                </option>
+                <option value="CW">
+                    Curacao
+                </option>
+                <option value="CY">
+                    Cyprus
+                </option>
+                <option value="CZ">
+                    Czech Republic
+                </option>
+                <option value="DK">
+                    Denmark
+                </option>
+                <option value="DJ">
+                    Djibouti
+                </option>
+                <option value="DM">
+                    Dominica
+                </option>
+                <option value="DO">
+                    Dominican Republic
+                </option>
+                <option value="EC">
+                    Ecuador
+                </option>
+                <option value="EG">
+                    Egypt
+                </option>
+                <option value="SV">
+                    El Salvador
+                </option>
+                <option value="GQ">
+                    Equatorial Guinea
+                </option>
+                <option value="ER">
+                    Eritrea
+                </option>
+                <option value="EE">
+                    Estonia
+                </option>
+                <option value="ET">
+                    Ethiopia
+                </option>
+                <option value="FK">
+                    Falkland Islands (Malvinas)
+                </option>
+                <option value="FO">
+                    Faroe Islands
+                </option>
+                <option value="FJ">
+                    Fiji
+                </option>
+                <option value="FI">
+                    Finland
+                </option>
+                <option value="FR">
+                    France
+                </option>
+                <option value="GF">
+                    French Guiana
+                </option>
+                <option value="PF">
+                    French Polynesia
+                </option>
+                <option value="TF">
+                    French Southern Territories
+                </option>
+                <option value="GA">
+                    Gabon
+                </option>
+                <option value="GM">
+                    Gambia
+                </option>
+                <option value="GE">
+                    Georgia
+                </option>
+                <option value="DE">
+                    Germany
+                </option>
+                <option value="GH">
+                    Ghana
+                </option>
+                <option value="GI">
+                    Gibraltar
+                </option>
+                <option value="GR">
+                    Greece
+                </option>
+                <option value="GL">
+                    Greenland
+                </option>
+                <option value="GD">
+                    Grenada
+                </option>
+                <option value="GP">
+                    Guadeloupe
+                </option>
+                <option value="GU">
+                    Guam
+                </option>
+                <option value="GT">
+                    Guatemala
+                </option>
+                <option value="GG">
+                    Guernsey
+                </option>
+                <option value="GN">
+                    Guinea
+                </option>
+                <option value="GW">
+                    Guinea-Bissau
+                </option>
+                <option value="GY">
+                    Guyana
+                </option>
+                <option value="HT">
+                    Haiti
+                </option>
+                <option value="HM">
+                    Heard Island and Mcdonald Islands
+                </option>
+                <option value="VA">
+                    Holy See (Vatican City State)
+                </option>
+                <option value="HN">
+                    Honduras
+                </option>
+                <option value="HK">
+                    Hong Kong
+                </option>
+                <option value="HU">
+                    Hungary
+                </option>
+                <option value="IS">
+                    Iceland
+                </option>
+                <option value="IN">
+                    India
+                </option>
+                <option value="ID">
+                    Indonesia
+                </option>
+                <option value="IR">
+                    Iran, Islamic Republic of
+                </option>
+                <option value="IQ">
+                    Iraq
+                </option>
+                <option value="IE">
+                    Ireland
+                </option>
+                <option value="IM">
+                    Isle of Man
+                </option>
+                <option value="IL">
+                    Israel
+                </option>
+                <option value="IT">
+                    Italy
+                </option>
+                <option value="JM">
+                    Jamaica
+                </option>
+                <option value="JP">
+                    Japan
+                </option>
+                <option value="JE">
+                    Jersey
+                </option>
+                <option value="JO">
+                    Jordan
+                </option>
+                <option value="KZ">
+                    Kazakhstan
+                </option>
+                <option value="KE">
+                    Kenya
+                </option>
+                <option value="KI">
+                    Kiribati
+                </option>
+                <option value="KP">
+                    Korea, Democratic People's Republic of
+                </option>
+                <option value="KR">
+                    Korea, Republic of
+                </option>
+                <option value="XK">
+                    Kosovo
+                </option>
+                <option value="KW">
+                    Kuwait
+                </option>
+                <option value="KG">
+                    Kyrgyzstan
+                </option>
+                <option value="LA">
+                    Lao People's Democratic Republic
+                </option>
+                <option value="LV">
+                    Latvia
+                </option>
+                <option value="LB">
+                    Lebanon
+                </option>
+                <option value="LS">
+                    Lesotho
+                </option>
+                <option value="LR">
+                    Liberia
+                </option>
+                <option value="LY">
+                    Libyan Arab Jamahiriya
+                </option>
+                <option value="LI">
+                    Liechtenstein
+                </option>
+                <option value="LT">
+                    Lithuania
+                </option>
+                <option value="LU">
+                    Luxembourg
+                </option>
+                <option value="MO">
+                    Macao
+                </option>
+                <option value="MK">
+                    Macedonia, the Former Yugoslav Republic of
+                </option>
+                <option value="MG">
+                    Madagascar
+                </option>
+                <option value="MW">
+                    Malawi
+                </option>
+                <option value="MY">
+                    Malaysia
+                </option>
+                <option value="MV">
+                    Maldives
+                </option>
+                <option value="ML">
+                    Mali
+                </option>
+                <option value="MT">
+                    Malta
+                </option>
+                <option value="MH">
+                    Marshall Islands
+                </option>
+                <option value="MQ">
+                    Martinique
+                </option>
+                <option value="MR">
+                    Mauritania
+                </option>
+                <option value="MU">
+                    Mauritius
+                </option>
+                <option value="YT">
+                    Mayotte
+                </option>
+                <option value="MX">
+                    Mexico
+                </option>
+                <option value="FM">
+                    Micronesia, Federated States of
+                </option>
+                <option value="MD">
+                    Moldova, Republic of
+                </option>
+                <option value="MC">
+                    Monaco
+                </option>
+                <option value="MN">
+                    Mongolia
+                </option>
+                <option value="ME">
+                    Montenegro
+                </option>
+                <option value="MS">
+                    Montserrat
+                </option>
+                <option value="MA">
+                    Morocco
+                </option>
+                <option value="MZ">
+                    Mozambique
+                </option>
+                <option value="MM">
+                    Myanmar
+                </option>
+                <option value="NA">
+                    Namibia
+                </option>
+                <option value="NR">
+                    Nauru
+                </option>
+                <option value="NP">
+                    Nepal
+                </option>
+                <option value="NL">
+                    Netherlands
+                </option>
+                <option value="AN">
+                    Netherlands Antilles
+                </option>
+                <option value="NC">
+                    New Caledonia
+                </option>
+                <option value="NZ">
+                    New Zealand
+                </option>
+                <option value="NI">
+                    Nicaragua
+                </option>
+                <option value="NE">
+                    Niger
+                </option>
+                <option value="NG">
+                    Nigeria
+                </option>
+                <option value="NU">
+                    Niue
+                </option>
+                <option value="NF">
+                    Norfolk Island
+                </option>
+                <option value="MP">
+                    Northern Mariana Islands
+                </option>
+                <option value="NO">
+                    Norway
+                </option>
+                <option value="OM">
+                    Oman
+                </option>
+                <option value="PK">
+                    Pakistan
+                </option>
+                <option value="PW">
+                    Palau
+                </option>
+                <option value="PS">
+                    Palestinian Territory, Occupied
+                </option>
+                <option value="PA">
+                    Panama
+                </option>
+                <option value="PG">
+                    Papua New Guinea
+                </option>
+                <option value="PY">
+                    Paraguay
+                </option>
+                <option value="PE">
+                    Peru
+                </option>
+                <option value="PH">
+                    Philippines
+                </option>
+                <option value="PN">
+                    Pitcairn
+                </option>
+                <option value="PL">
+                    Poland
+                </option>
+                <option value="PT">
+                    Portugal
+                </option>
+                <option value="PR">
+                    Puerto Rico
+                </option>
+                <option value="QA">
+                    Qatar
+                </option>
+                <option value="RE">
+                    Reunion
+                </option>
+                <option value="RO">
+                    Romania
+                </option>
+                <option value="RU">
+                    Russian Federation
+                </option>
+                <option value="RW">
+                    Rwanda
+                </option>
+                <option value="BL">
+                    Saint Barthelemy
+                </option>
+                <option value="SH">
+                    Saint Helena
+                </option>
+                <option value="KN">
+                    Saint Kitts and Nevis
+                </option>
+                <option value="LC">
+                    Saint Lucia
+                </option>
+                <option value="MF">
+                    Saint Martin
+                </option>
+                <option value="PM">
+                    Saint Pierre and Miquelon
+                </option>
+                <option value="VC">
+                    Saint Vincent and the Grenadines
+                </option>
+                <option value="WS">
+                    Samoa
+                </option>
+                <option value="SM">
+                    San Marino
+                </option>
+                <option value="ST">
+                    Sao Tome and Principe
+                </option>
+                <option value="SA">
+                    Saudi Arabia
+                </option>
+                <option value="SN">
+                    Senegal
+                </option>
+                <option value="RS">
+                    Serbia
+                </option>
+                <option value="CS">
+                    Serbia and Montenegro
+                </option>
+                <option value="SC">
+                    Seychelles
+                </option>
+                <option value="SL">
+                    Sierra Leone
+                </option>
+                <option value="SG">
+                    Singapore
+                </option>
+                <option value="SX">
+                    Sint Maarten
+                </option>
+                <option value="SK">
+                    Slovakia
+                </option>
+                <option value="SI">
+                    Slovenia
+                </option>
+                <option value="SB">
+                    Solomon Islands
+                </option>
+                <option value="SO">
+                    Somalia
+                </option>
+                <option value="ZA">
+                    South Africa
+                </option>
+                <option value="GS">
+                    South Georgia and the South Sandwich Islands
+                </option>
+                <option value="SS">
+                    South Sudan
+                </option>
+                <option value="ES">
+                    Spain
+                </option>
+                <option value="LK">
+                    Sri Lanka
+                </option>
+                <option value="SD">
+                    Sudan
+                </option>
+                <option value="SR">
+                    Suriname
+                </option>
+                <option value="SJ">
+                    Svalbard and Jan Mayen
+                </option>
+                <option value="SZ">
+                    Swaziland
+                </option>
+                <option value="SE">
+                    Sweden
+                </option>
+                <option value="CH">
+                    Switzerland
+                </option>
+                <option value="SY">
+                    Syrian Arab Republic
+                </option>
+                <option value="TW">
+                    Taiwan, Province of China
+                </option>
+                <option value="TJ">
+                    Tajikistan
+                </option>
+                <option value="TZ">
+                    Tanzania, United Republic of
+                </option>
+                <option value="TH">
+                    Thailand
+                </option>
+                <option value="TL">
+                    Timor-Leste
+                </option>
+                <option value="TG">
+                    Togo
+                </option>
+                <option value="TK">
+                    Tokelau
+                </option>
+                <option value="TO">
+                    Tonga
+                </option>
+                <option value="TT">
+                    Trinidad and Tobago
+                </option>
+                <option value="TN">
+                    Tunisia
+                </option>
+                <option value="TR">
+                    Turkey
+                </option>
+                <option value="TM">
+                    Turkmenistan
+                </option>
+                <option value="TC">
+                    Turks and Caicos Islands
+                </option>
+                <option value="TV">
+                    Tuvalu
+                </option>
+                <option value="UG">
+                    Uganda
+                </option>
+                <option value="UA">
+                    Ukraine
+                </option>
+                <option value="AE">
+                    United Arab Emirates
+                </option>
+                <option value="GB">
+                    United Kingdom
+                </option>
+                <option value="US">
+                    United States
+                </option>
+                <option value="UM">
+                    United States Minor Outlying Islands
+                </option>
+                <option value="UY">
+                    Uruguay
+                </option>
+                <option value="UZ">
+                    Uzbekistan
+                </option>
+                <option value="VU">
+                    Vanuatu
+                </option>
+                <option value="VE">
+                    Venezuela
+                </option>
+                <option value="VN">
+                    Viet Nam
+                </option>
+                <option value="VG">
+                    Virgin Islands, British
+                </option>
+                <option value="VI">
+                    Virgin Islands, U.s.
+                </option>
+                <option value="WF">
+                    Wallis and Futuna
+                </option>
+                <option value="EH">
+                    Western Sahara
+                </option>
+                <option value="YE">
+                    Yemen
+                </option>
+                <option value="ZM">
+                    Zambia
+                </option>
+                <option value="ZW">
+                    Zimbabwe
+                </option>
+            </select>
+        </br>
+    </br>
+           
+            <!--input type="button" onclick="getOption()" value="Submit form" name="don"-->
+            
+         <p class="bottom" style="background-color: blue; color: white; height: 40px; width: 100px; border-radius: 5px;"> 
+    <a class="bottom" href="{{url_for('ossa')}}" style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%; color: white; text-decoration: none; font-weight: bold;">Next</a>
+</p>
+
+
+        </div></center>
+
+            <script>
+                $(document).ready(function() {
+                    $("select").select2();
+                });
+                function getOption() {
+                    selectElement = document.querySelector('#select_page');
+                    output = selectElement.value;
+                    selectElement1 = document.querySelector('#country');
+                    output1 = selectElement1.value;
+                    var eel=  document.getElementsByName('gender1');
+                    var ele = document.getElementsByName('gender');
+                    for (i = 0; i < ele.length; i++) {
+                        if (ele[i].checked) {
+                            var e = ele[i].value;
+                        }
+                    }
+                    for (i = 0; i < eel.length; i++) {
+                        if (eel[i].checked) {
+                            var e1 = eel[i].value;
+                        }
+                    }
+                  
+                    let poo = {
+                        name: output,
+                        age: e,
+                        height:output1,
+                        weight:e1
+                    };
+                    $.ajax({
+                        url: '/process',
+                        type: 'POST',
+                        data: JSON.stringify(poo),
+                        processData: false,
+                        contentType: "application/json; charset=UTF-8",
+                        success: function(response) {
+                            document.getElementById('output').innerHTML = response;
+                        },
+                        error: function(error) {
+                            console.log(error);
+                        }
+                    });
+                }
+            </script>
+    </body>
+
+</html>

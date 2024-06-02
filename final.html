@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("6.jpg");
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color:rgba(0, 0, 0,0.7);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+p {
+    color:#fff;
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline-block; 
+    width: calc(25% - 10px); 
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="hidden"] {
+    display: none;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container" id="container">
+ <p>Name:#45345</p>
+ <p>Gmail:abcd@gmail.com</p>
+ <p>mobile number:8939200603</p>
+ {% for i in z0 %}
+      <p>Prefered country:{{i}}</p>
+ {% endfor %}
+ <p>Prefered level:{{f}}</p>
+ <p>prefered course:{{f0}}</p>
+ <form action="" method="post">
+         {% for i in x0 %}
+                           <p>{{i}}</p>
+                           <input type="hidden" name="button_id" id="button_id" value="">
+                           <input type="hidden" name="button_value" id="button_value" value="">
+                           <button type="submit" id="courses" value="{{i}}" onclick="setButtonData(this)">courses offered</button>
+                           <button type="submit" id="scholar" value="{{i}}" onclick="setButtonData(this)">scholarship</button>
+                           <button type="submit" id="fee" value="{{i}}" onclick="setButtonData(this)">academic fee structure</button>
+                           <button type="submit" id="carrear" value="{{i}}" onclick="setButtonData(this)">career opportunities</button>
+                           <button class="courses" value="{{i}}" onclick="myFunction(this)">courses</button>
+                           <button class="scholar" value="{{i}}" onclick="myFunction1(this)">scholarship</button>
+                           <button class="fee" value="{{i}}" onclick="myFunction2(this)">academic fee</button>
+                           <button class="carrear" value="{{i}}" onclick="myFunction3(this)">career opportunities</button>
+          {% endfor %}
+  </form>
+</div>
+
+    <script>
+        function setButtonData(button) {
+            document.getElementById('button_id').value = button.id;
+            document.getElementById('button_value').value = button.value;
+        }
+    </script>
+</body>
+</html>
+<!---DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="hidden"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="" method="post">
+        {% for i in x0 %}
+            {% for j in y0 %}
+                {% for k in z0 %}
+                    <p>{{i}} - {{j}} - {{k}}</p>
+                    <input type="hidden" name="button_id" id="button_id" value="">
+                    <input type="hidden" name="button_value" id="button_value" value="">
+                    <button type="submit" id="courses" value="{{i}}" onclick="setButtonData(this)">Courses Offered</button>
+                    <button type="submit" id="scholar" value="{{i}}" onclick="setButtonData(this)">Scholarship</button>
+                    <button type="submit" id="fee" value="{{i}}" onclick="setButtonData(this)">Academic Fee Structure</button>
+                    <button type="submit" id="career" value="{{i}}" onclick="setButtonData(this)">Career Opportunities</button>
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    </form>
+</div>
+
+<script>
+    function setButtonData(button) {
+        document.getElementById('button_id').value = button.id;
+        document.getElementById('button_value').value = button.value;
+    }
+</script>
+</body>
+</html--->
+

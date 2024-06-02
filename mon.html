@@ -1,0 +1,153 @@
+<html>
+ <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Financial Assessment</title>
+    <style>
+   body {
+    background-image: url("5.jpg");
+    background-size:120% 100%;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.checkbox-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checkbox-input {
+    vertical-align: middle;
+}
+</style>
+    <body>
+        <form method="post" act="{{url_for('ossa1')}}">
+            <p>how much money can you afford?</p>
+            <p><input type="number" id="tu" name="tu" min="1" max="30010"></p>
+            <input type="submit" name="su" value="prosceed">
+            <p>I wanna take up scholarship<input type="checkbox" value="scholarship" name="mycheck"></p>
+            <input type="submit" name="su" value="next">
+        </form>
+    </body>
+    <!---DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Financial Assessment</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .container {
+          max-width: 400px;
+          margin: 50px auto;
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        h1 {
+          text-align: center;
+          color: #333;
+        }
+    
+        p {
+          color: #555;
+        }
+    
+        input[type="number"],
+        input[type="submit"],
+        input[type="checkbox"] {
+          width: calc(100% - 20px);
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+    
+        input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          cursor: pointer;
+        }
+    
+        input[type="submit"]:hover {
+          background-color: #0056b3;
+        }
+    
+        input[type="checkbox"] {
+          width: auto;
+          margin-right: 10px;
+        }
+    
+        .checkbox-label {
+          font-size: 16px;
+          color: #333;
+        }
+    
+        .checkbox-container {
+          display: flex;
+          align-items: center;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Financial Assessment</h1>
+        <form method="post" action="{{url_for('ossa1')}}">
+          <p>How much money can you afford?</p>
+          <p><input type="number" id="tu" name="tu" min="1" max="30010"></p>
+          <input type="submit" name="su" value="Proceed">
+          <div class="checkbox-container">
+            <input type="checkbox" id="scholarship" value="scholarship" name="mycheck">
+            <label for="scholarship" class="checkbox-label">I want to apply for a scholarship</label>
+          </div>
+          <input type="submit" name="su" value="Next">
+        </form>
+      </div>
+    </body>
+    </html--->
+    

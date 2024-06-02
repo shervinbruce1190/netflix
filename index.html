@@ -1,0 +1,104 @@
+<!---DOCTYPE html>
+<html>
+<head>
+  <title>Preferred Intake</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+<body>
+  <p>Preferred Intake</p>
+  <form method="post" action="{{ url_for('intake') }}">
+    <input type="radio" value="Jan 2024" name="country">
+    Jan 2024
+    <input type="radio" value="Sep 2024" name="country">
+    Sep 2024
+    <input type="radio" value="Jan 2025" name="country">
+    Jan 2025
+    <input type="radio" value="Sep 2025" name="country">
+    Sep 2025
+    <p><input type=submit name="eel" value=Next></p>
+  </form>
+    
+</body>
+</html--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferred Intake</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('2.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        p {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+        }
+        input[type="radio"] {
+            margin-top:10px;
+            margin: 10px 0;
+            
+
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius:15px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        
+    </style>
+</head>
+<body>
+    <p style="color:#D1D1D1;">Preferred Intake</p>
+    <form method="post" action="{{ url_for('intake') }}">
+        <div>
+            <input type="radio" value="Jan 2024" name="country" id="jan2024">
+            <label for="jan2024">Jan 2024</label>
+        </div>
+        <div>
+            <input type="radio" value="Sep 2024" name="country" id="sep2024">
+            <label for="sep2024">Sep 2024</label>
+        </div>
+        <div>
+            <input type="radio" value="Jan 2025" name="country" id="jan2025">
+            <label for="jan2025">Jan 2025</label>
+        </div>
+        <div>
+            <input type="radio" value="Sep 2025" name="country" id="sep2025">
+            <label for="sep2025">Sep 2025</label>
+        </div>
+        <p><input type="submit" name="eel" value="Next"></p>
+    </form>
+</body>
+</html>
+

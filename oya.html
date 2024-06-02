@@ -1,0 +1,248 @@
+<!---DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Visibility Control</title>
+  <style>
+    .text-container {
+      display: none;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form id="exam-form" method="post" action="{{url_for('ossa')}}">
+    <p>Choose the academic exam</p>
+    <select id="academic-dropdown">
+      <option value="">Choose an option</option>
+      <option value="gre">GRE</option>
+      <option value="gmat">GMAT</option>
+      <option value="act">ACT</option>
+    </select>
+    <div id="academic-gre-container" class="text-container">
+      <p>Enter GRE score</p>
+      <input type="number" id="gre" name="gre" min="1" max="340">
+      <input type="submit" value="Enter GRE marks" name="exam">
+    </div>
+    <div id="academic-gmat-container" class="text-container">
+      <p>Enter GMAT score</p>
+      <input type="number" id="gmat" name="gmat" min="1" max="805">
+      <input type="submit" value="Enter GMAT marks" name="exam">
+    </div>
+    <div id="academic-act-container" class="text-container">
+      <p>Enter ACT score</p>
+      <input type="number" id="act" name="act" min="1" max="36">
+      <input type="submit" value="Enter ACT marks" name="exam">
+    </div>
+    <p>Choose the English Test</p>
+    <select id="english-dropdown">
+      <option value="">Choose an option</option>
+      <option value="toefl">TOEFL</option>
+      <option value="ielts">IELTS</option>
+      <option value="cam">Cambridge Advanced Test</option>
+    </select>
+    <div id="english-toefl-container" class="text-container">
+      <p>Enter TOEFL score</p>
+      <input type="number" id="toefl" name="toefl" min="1" max="340">
+      <input type="submit" value="Enter TOEFL marks" name="exam">
+    </div>
+    <div id="english-ielts-container" class="text-container">
+      <p>Enter IELTS score</p>
+      <input type="number" id="ielts" name="ielts" min="1" max="805">
+      <input type="submit" value="Enter IELTS marks" name="exam">
+    </div>
+    <div id="english-cam-container" class="text-container">
+      <p>Enter Cambridge Advanced Test score</p>
+      <input type="number" id="cam" name="cam" min="1" max="36">
+      <input type="submit" value="Enter Cambridge Advanced Test score marks" name="exam">
+    </div>
+  </form>
+  <p class="bottom"> <a class="bottom" href="{{url_for('ossa1')}}"> Next</a></p>
+  <script>
+  function showTextBox(dropdownId, containerIdPrefix) {
+    const dropdown = document.getElementById(dropdownId);
+    const textContainers = document.querySelectorAll('.text-container');
+    textContainers.forEach(container => container.style.display = 'none');
+    const container = document.getElementById(`${containerIdPrefix}-${dropdown.value}-container`);
+    if (container) {
+      container.style.display = 'block';
+    }
+  }
+
+  document.getElementById('academic-dropdown').addEventListener('change', function() {
+    showTextBox('academic-dropdown', 'academic');
+  });
+
+  document.getElementById('english-dropdown').addEventListener('change', function() {
+    showTextBox('english-dropdown', 'english');
+  });
+
+  // Initially hide all textboxes
+  showTextBox('academic-dropdown', 'academic');
+  showTextBox('english-dropdown', 'english');
+  </script>
+</body>
+</html--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Visibility Control</title>
+  <style>
+     body {
+            font-family: Arial, sans-serif;
+            background-image: url("4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+    
+    .container {
+
+      max-width: 600px;
+      margin: 20px auto;
+      background-color:rgba(0, 0, 0,0.4);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    select,
+    input[type="number"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .text-container {
+      display: none;
+    }
+
+    .bottom {
+    text-align: center;
+    background-color: orange;
+    background-size:40px;
+    margin-top: 20px;
+    padding:5px 10px;
+    border-radius: 8px;
+    cursor: pointer; 
+     height:60%; 
+    width:40%; 
+}
+
+a.bottom {
+    color: ghostwhite;
+    font-size:20px;
+    text-decoration: none;
+    font-weight: bold; 
+   
+}
+
+a.bottom:hover {
+
+    text-decoration: none;
+    color: ghostwhite; 
+    text-align:center;
+}
+
+
+.bottom a {
+    text-decoration:none;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+   
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="color:whitesmoke;">Dropdown Visibility Control</h1>
+    <form id="exam-form" method="post" action="{{url_for('ossa')}}">
+      <p style="color:white;">Choose the academic exam</p>
+      <select id="academic-dropdown">
+        <option value="">Choose an option</option>
+        <option value="gre">GRE</option>
+        <option value="gmat">GMAT</option>
+        <option value="act">ACT</option>
+      </select>
+      <div id="academic-gre-container" class="text-container">
+        <p  style="color:white;">Enter GRE score</p>
+        <input type="number" id="gre" name="gre" min="1" max="340">
+        <input type="submit" value="Enter GRE marks" name="exam">
+      </div>
+      <!-- Add similar containers for other academic exams -->
+      
+      <p  style="color:white;">Choose the English Test</p>
+      <select id="english-dropdown">
+        <option value="">Choose an option</option>
+        <option value="toefl">TOEFL</option>
+        <option value="ielts">IELTS</option>
+        <option value="cam">Cambridge Advanced Test</option>
+      </select>
+      <div id="english-toefl-container" class="text-container">
+        <p>Enter TOEFL score</p>
+        <input type="number" id="toefl" name="toefl" min="1" max="340">
+        <input type="submit" value="Enter TOEFL marks" name="exam">
+      </div>
+      <!-- Add similar containers for other English tests -->
+    </form>
+    <center><p class="bottom"> <a class="bottom" href="{{url_for('ossa1')}}"> Next</a></p></center>
+  </div>
+  <script>
+    function showTextBox(dropdownId, containerIdPrefix) {
+      const dropdown = document.getElementById(dropdownId);
+      const textContainers = document.querySelectorAll('.text-container');
+      textContainers.forEach(container => container.style.display = 'none');
+      const container = document.getElementById(`${containerIdPrefix}-${dropdown.value}-container`);
+      if (container) {
+        container.style.display = 'block';
+      }
+    }
+
+    document.getElementById('academic-dropdown').addEventListener('change', function() {
+      showTextBox('academic-dropdown', 'academic');
+    });
+
+    document.getElementById('english-dropdown').addEventListener('change', function() {
+      showTextBox('english-dropdown', 'english');
+    });
+
+    // Initially hide all textboxes
+    showTextBox('academic-dropdown', 'academic');
+    showTextBox('english-dropdown', 'english');
+  </script>
+</body>
+</html>
+
